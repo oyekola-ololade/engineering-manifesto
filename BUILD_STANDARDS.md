@@ -1,6 +1,6 @@
 # Shared App Build Standards
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Reviewed:** 2026-11-09 (Africa/Lagos)  
 **Canonical source:** this file in the SaaS Product Build Lab.  
 **Applies from day one:** every active standalone app or SaaS build, including new work in other projects. Existing project maps, build plans, and prompts must link to this standard. A product owner can add stricter product-specific controls, but must not weaken these shared rules without an explicit decision record.
@@ -95,6 +95,13 @@ The work must remain usable if a chat, AI account, subscription, or single devic
 - **GitHub repository:** version-controlled source code, configuration examples, project README, decisions, handoff, and code issue history. Each active standalone product uses its existing canonical repository; inspect before creating a new one. Keep it private by default.
 - **Google Drive:** product briefs, research and source notes, approvals, user-facing records, evidence index, and a dated source snapshot/export for recovery. Keep sensitive access limited; do not put secrets in Drive.
 - **Local device:** current working copy. It is not the only copy and must not be treated as a remote backup.
+
+### Repository readiness gate
+
+- Each active standalone build has its own canonical GitHub repository. Before code work, inspect the account and local project for an existing repository; reuse the canonical match and avoid duplicates.
+- If no repository exists, create or designate a private repository for that standalone build before treating implementation work as backed up. Do not bundle unrelated products into the portfolio-coordination repository just to claim a backup.
+- Record the repository URL, default branch, local remote, and access status in the product project map and Drive manifest. If setup or access is blocked, work may be saved locally, but the milestone remains **Sync pending** until a remote copy is verified.
+
 - Maintain a small manifest for each product with its canonical GitHub URL, Drive project-record URL, default branch, latest confirmed commit SHA, last sync date, and current sync state.
 
 ### Required sync routine
@@ -154,5 +161,6 @@ Sources checked 2026-11-09. Recheck versioned sources when starting a new projec
 
 ---
 This is a shared process standard and checklist. A checked box is not proof by itself; attach the artifact or verification result that supports it.
+
 
 
