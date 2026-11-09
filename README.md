@@ -63,6 +63,12 @@ More agents, more nodes, more services, and more abstractions do not automatical
 
 A system should be understandable by someone other than the person who built it. Architecture, setup, assumptions, limitations, test status, and handoff procedures are part of the product.
 
+## 11. Quality and recovery are day-one requirements
+
+Build for WCAG 2.2 AA accessibility and use OWASP ASVS plus NIST SSDF as security and lifecycle references. Organize code so a new maintainer can find screens, shared components, and data access quickly. Keep durable requirements, decisions, task status, evidence, and recovery steps outside chat history. At each milestone, reconcile the code commit with the Drive project record and recovery snapshot. Keep credentials and private data out of repositories and public evidence.
+
+The [shared build standards](BUILD_STANDARDS.md) define the day-one UI, security, architecture, documentation, tracking, verification, and GitHub/Drive continuity rules for every standalone app.
+
 ---
 
 **Oyekola Ololade**  
